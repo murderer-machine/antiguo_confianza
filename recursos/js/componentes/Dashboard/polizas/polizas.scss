@@ -1,0 +1,21 @@
+@import  '../../../../sass/variables.scss';
+.modal_confianza{   
+   @include responsive(celular_p) {
+    max-width: 95vw;
+  }
+  @include responsive(celular_l) {
+    max-width: 95vw;
+  }
+  @include responsive(tablet) {
+    max-width: 90vw;
+  }
+  @include responsive(pc) {
+    max-width: 90vw;
+  }
+  @include responsive(televisor) {
+    max-width: 60vw;
+  }
+}
+.custom-file-label::after {
+display: none;
+}

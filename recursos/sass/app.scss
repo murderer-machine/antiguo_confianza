@@ -1,0 +1,219 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.btn-inicio {
+    background-color: $btn-inicio !important;
+    border-color: $btn-inicio !important;
+    border-radius: 0.25rem !important;
+    color: #fff !important;
+}
+* {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn-inicio:hover {
+    background-color: $btn-inicio_hover !important;
+}
+
+.btn-inicio:focus {
+    box-shadow: initial !important;
+}
+
+body {
+    background-color: $color_body !important;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 500 !important;
+}
+.font_primario {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 500 !important;
+}
+.font_secundario {
+    font-family: "Oswald", sans-serif !important;
+}
+.col-form-label {
+    font-weight: 600 !important;
+}
+
+.form-control {
+    text-transform: uppercase;
+}
+
+.asterisco {
+    color: red !important;
+    padding: 2px !important;
+    font-size: 100% !important;
+}
+
+.react-datepicker-wrapper {
+    width: 100% !important;
+}
+
+.centrar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: $color_principal;
+}
+
+.badge-inicio_border {
+    color: rgba(0, 138, 214, 1) !important;
+    border: 1px solid rgba(0, 138, 214, 1) !important;
+    font-size: initial !important;
+}
+
+.badge-secundario {
+    color: #fff;
+    background-color: $color_principal;
+}
+
+.badge-anaranjado {
+    color: #ff7733 !important;
+    border: 1px solid #ff7733 !important;
+    font-size: initial !important;
+}
+.badge {
+    font-weight: initial;
+}
+button:focus {
+    outline: 0px !important;
+}
+
+[class*="card_confianza"] {
+    background-color: #fff;
+    border: 1px solid #eee;
+    // box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+[class*="card_confianza_background"] {
+    background-color: rgba(0, 138, 214, 0.1) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+.table_confianza {
+    display: table;
+    width: 100%;
+}
+
+.table_confianza > div {
+    display: table-row;
+}
+
+.table_confianza > div > div {
+    display: table-cell;
+    border: 1px solid rgba(0, 138, 214, 0.3);
+    border-top: 0px solid transparent;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+.table_confianza > div > div:nth-of-type(2) {
+    border: 1px solid rgba(0, 138, 214, 0.3);
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+.table_confianza > div:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $color_principal;
+    color: #fff;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.alert-inicio {
+    background-color: initial;
+    border-color: transparent;
+}
+
+.col-form-label {
+    @include responsive(celular_p) {
+        text-align: left;
+    }
+
+    @include responsive(celular_l) {
+        text-align: left;
+    }
+
+    @include responsive(tablet) {
+        text-align: left;
+    }
+
+    @include responsive(pc) {
+        text-align: right;
+    }
+
+    @include responsive(televisor) {
+        text-align: right;
+    }
+}
+.col-form-label-left {
+    text-align: left !important;
+}
+.modal-header {
+    padding: 0.5rem 1rem !important;
+    border-bottom: 0 solid transparent;
+}
+
+.text-inicio {
+    color: $color_principal;
+}
+
+.text-tercero {
+    color: $color_tercero;
+}
+
+.container {
+    @include responsive(celular_p) {
+        max-width: 98% !important;
+    }
+
+    @include responsive(celular_l) {
+        max-width: 98% !important;
+    }
+
+    @include responsive(tablet) {
+        max-width: 90% !important;
+    }
+
+    @include responsive(pc) {
+        max-width: 78% !important;
+    }
+
+    @include responsive(televisor) {
+        max-width: 75% !important;
+    }
+}
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.navbar {
+    box-shadow: none !important;
+}
+table td,
+table th {
+    font-size: 0.9rem;
+    font-weight: 600 !important;
+}
+.head_table {
+    background-color: $color_principal;
+    color: #fff;
+}
+
+.MuiAlert-message {
+    width: 100% !important;
+}

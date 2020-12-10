@@ -1,0 +1,4 @@
+nbproject/
+node_modules/
+recursos/composer/vendor/
+.DS_STORE

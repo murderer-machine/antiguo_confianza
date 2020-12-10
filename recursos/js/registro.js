@@ -1,0 +1,4 @@
+
+
+require('./componentes/Auth/registro')
+
